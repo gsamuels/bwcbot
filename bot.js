@@ -1,6 +1,7 @@
 var Discord = require('discord.io');
 var logger = require('winston');
 var auth = require('./auth.json');
+
 // Configure logger settings
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
@@ -42,4 +43,5 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 });
 
 // THIS MUST BE THIS WAY
-bot.login(process.env.BOT_TOKEN);
+var client = new Discord.Client();
+client.login(process.env.BOT_TOKEN);
