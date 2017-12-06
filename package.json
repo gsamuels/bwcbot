@@ -1,0 +1,26 @@
+{
+  "name": "greeter-bot",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
+  "main": "bot.js",
+  "author": "George Siosi Samuels",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "winston": "^2.4.0"
+  },
+  "scripts": {
+    "test": "ping"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsamuels/bwcbot.git"
+  },
+  "keywords": [
+    "bitcoin"
+  ],
+  "bugs": {
+    "url": "https://github.com/gsamuels/bwcbot/issues"
+  },
+  "homepage": "https://github.com/gsamuels/bwcbot#readme"
+}
