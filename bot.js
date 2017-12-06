@@ -7,6 +7,7 @@ logger.add(logger.transports.Console, {
     colorize: true
 });
 logger.level = 'debug';
+
 // Initialize Discord Bot
 var bot = new Discord.Client({
    token: auth.token,
@@ -41,4 +42,4 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 });
 
 // THIS MUST BE THIS WAY
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
