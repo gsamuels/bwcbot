@@ -41,4 +41,4 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 });
 
 // THIS MUST BE THIS WAY
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
